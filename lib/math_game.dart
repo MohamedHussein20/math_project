@@ -22,40 +22,45 @@ main() {
     29,
     30,
   ];
+  print("Enter Your age: ");
+  int age = int.parse(stdin.readLineSync()!);
+  if (age >= 10) {
+    print("List 1 : $list1");
+    print("List 2 : $list2");
+    print("List 3 : $list3");
+    print("List 4 : $list4");
+    print("List 5 : $list5");
+    print("Think of number between 1 and 30");
 
-  print(list1);
-  print(list2);
-  print(list3);
-  print(list4);
-  print(list5);
-  print("Think of number between 1 and 30");
+    int counter = 0;
+    print("Does this number exists in list 1 ?");
+    String guess1 = stdin.readLineSync()!;
+    if (guess1.toLowerCase() == "yes") {
+      counter += list1[0];
+    }
+    print("Does this number exists in list 2 ?");
+    String guess2 = stdin.readLineSync()!;
+    if (guess2.toLowerCase() == "yes") {
+      counter += list2[0];
+    }
+    print("Does this number exists in list 3 ?");
+    String guess3 = stdin.readLineSync()!;
+    if (guess3.toLowerCase() == "yes") {
+      counter += list3[0];
+    }
+    print("Does this number exists in list 4 ?");
+    String guess4 = stdin.readLineSync()!;
+    if (guess4.toLowerCase() == "yes") {
+      counter += list4[0];
+    }
+    print("Does this number exists in list 5 ?");
+    String guess5 = stdin.readLineSync()!;
+    if (guess5.toLowerCase() == "yes") {
+      counter += list5[0];
+    }
 
-  int counter = 0;
-  print("Does this number exists in list 1 ?");
-  String guess1 = stdin.readLineSync()!;
-  if (guess1 == "Yes") {
-    counter += list1[0];
+    print("You think of $counter");
+  } else {
+    print("You are too young");
   }
-  print("Does this number exists in list 2 ?");
-  String guess2 = stdin.readLineSync()!;
-  if (guess2 == "Yes") {
-    counter += list2[0];
-  }
-  print("Does this number exists in list 3 ?");
-  String guess3 = stdin.readLineSync()!;
-  if (guess3 == "Yes") {
-    counter += list3[0];
-  }
-  print("Does this number exists in list 4 ?");
-  String guess4 = stdin.readLineSync()!;
-  if (guess4 == "Yes") {
-    counter += list4[0];
-  }
-  print("Does this number exists in list 5 ?");
-  String guess5 = stdin.readLineSync()!;
-  if (guess5 == "Yes") {
-    counter += list5[0];
-  }
-
-  print("You think of $counter");
 }
