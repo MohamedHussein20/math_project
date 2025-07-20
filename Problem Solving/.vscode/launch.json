@@ -4,7 +4,6 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-
         {
             "program": "E:\\Flutter Course\\Problem Solving\\lib\\Task2\\random_medium.dart",
             "name": "Dart & Flutter",
