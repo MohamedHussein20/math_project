@@ -32,8 +32,8 @@ main() {
     if (result == ans) {
       print("Correct!");
       correctCounter++;
-    } else if (result != number1 + number2) {
-      print("Incorrect. The correct answer is ${number1 + number2}.");
+    } else {
+      print("Incorrect. The correct answer is $ans.");
       print("Try Again");
       inCorrectCounter++;
     }
