@@ -6,7 +6,7 @@
     "configurations": [
 
         {
-            "program": "E:\\Flutter Course\\Problem Solving\\lib\\Task2\\random_hard.dart",
+            "program": "Problem Solving\\lib\\Task3\\doctor_system_advanced.dart",
             "name": "Dart & Flutter",
             "request": "launch",
             "type": "dart"
