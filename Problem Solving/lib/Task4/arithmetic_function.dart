@@ -1,25 +1,35 @@
 import 'dart:io';
 
 void main() {
-  int number1, number2;
-  String operation;
+  while (true) {
+    int number1, number2;
+    String operation;
 
-  print("Enter the first number: ");
-  number1 = int.parse(stdin.readLineSync()!);
+    print("Enter the first number: ");
+    number1 = int.parse(stdin.readLineSync()!);
 
-  print("Enter the second number: ");
-  number2 = int.parse(stdin.readLineSync()!);
+    print("Enter the second number: ");
+    number2 = int.parse(stdin.readLineSync()!);
 
-  print("Enter the operation (+, -, *, /): ");
-  operation = stdin.readLineSync()!;
+    print("Enter the operation (+, -, *, /): ");
+    operation = stdin.readLineSync()!;
 
-  double result = arithmeticOperation(
-    number1: number1.toDouble(),
-    number2: number2.toDouble(),
-    operation: operation,
-  );
+    double result = arithmeticOperation(
+      number1: number1.toDouble(),
+      number2: number2.toDouble(),
+      operation: operation,
+    );
 
-  print("The result is: $result");
+    print("The result is: $result");
+    print("Do you want to perform another operation? [yes / no]");
+    String answer = stdin.readLineSync()!.toLowerCase();
+    if (answer != "no") {
+      print("The program is finished");
+      break;
+    } else if (answer != "yes") {
+      continue;
+    }
+  }
 }
 
 double arithmeticOperation({

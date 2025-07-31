@@ -1,14 +1,25 @@
 import 'dart:io';
 
 main() {
-  print(
-    "Enter the shape for which you want to calculate the area (square, circle, triangle):",
-  );
-  String shape = stdin.readLineSync()!.toLowerCase();
+  while (true) {
+    print(
+      "Enter the shape for which you want to calculate the area (square, circle, triangle):",
+    );
+    String shape = stdin.readLineSync()!.toLowerCase();
 
-  double areaResult = area(shape: shape);
+    double areaResult = area(shape: shape);
 
-  print("The area of the $shape is: $areaResult");
+    print("The area of the $shape is: $areaResult");
+    print("Do you want to enter another area ? [yes / no]");
+    String answer = stdin.readLineSync()!.toLowerCase();
+    if (answer != "no") {
+      print("The program is finished");
+      break;
+    }
+    else if (answer != "yes") {
+      continue;
+    }
+  }
 }
 
 double area({required String shape}) {
