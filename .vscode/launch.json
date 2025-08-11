@@ -6,7 +6,7 @@
     "configurations": [
 
         {
-            "program": "Problem Solving\\lib\\Task4\\arithmetic_function.dart",
+            "program": "Problem Solving/lib/Task5 (oop)/task7.dart",
             "name": "Dart & Flutter",
             "request": "launch",
             "type": "dart"
